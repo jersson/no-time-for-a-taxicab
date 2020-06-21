@@ -10,12 +10,13 @@ You can see the original problem [here](https://adventofcode.com/2016/day/1#part
 ## what's the project structure?
 ```
 .
+├── LICENSE
 ├── README.md
 ├── navigator.js
+├── navigator.test.js
 ├── package-lock.json
 ├── package.json
-├── program.js
-└── program.test.js
+└── program.js
 ```
 
 ## what's the code do?
