@@ -5,7 +5,7 @@
   "main": "program.js",
   "scripts": {
     "start": "node .",
-    "test": "jest navigator.test.js"
+    "test": "jest test/**.test.js"
   },
   "author": "JD",
   "license": "MIT",

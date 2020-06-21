@@ -1,21 +1,5 @@
-const cardinalPoints = {
-    west: 'Oeste',
-    north: 'Norte',
-    east: 'Este',
-    south: 'Sur'
-};
-
-const directionToTurn = {
-    right: 'R',
-    left: 'L'
-};
-
-class Point {
-    constructor (x,y){
-        this.x = x;
-        this.y = y;
-    }
-};
+const  { cardinalPoints, directionToTurn } = require('./utils');
+const Point = require('./geometry');
 
 class Navigator {
     constructor(){

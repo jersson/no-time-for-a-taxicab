@@ -12,15 +12,19 @@ You can see the original problem [here](https://adventofcode.com/2016/day/1#part
 .
 ├── LICENSE
 ├── README.md
-├── navigator.js
-├── navigator.test.js
 ├── package-lock.json
 ├── package.json
-└── program.js
+├── src
+│   ├── geometry.js
+│   ├── navigator.js
+│   ├── program.js
+│   └── utils.js
+└── test
+    └── navigator.test.js
 ```
 
 ## what's the code do?
-You'll find the most important part of the code in the [`navigator.js`](./navigator.js) file. The `Navigator` class has this structure:
+You'll find the most important part of the code in the [`navigator.js`](./src/navigator.js) file. The `Navigator` class has this structure:
 ```javascript
   class Navigator {
       constructor(){...}
@@ -50,9 +54,9 @@ Menor distancia: 262
 I'm using [Jest](https://jestjs.io/) for the test cases and you can see the results if you run this command:
 ```
 $ npm test
-> jest navigator.test.js
+> jest test/**.test.js
 
-PASS  ./navigator.test.js
+PASS  test/navigator.test.js
   tests for no-time-for-a-taxicab
     ✓ should return to the original point turning 4 times to the right (2 ms)
     ✓ should return to the original point turning 4 times to the left
@@ -64,5 +68,5 @@ PASS  ./navigator.test.js
 Test Suites: 1 passed, 1 total
 Tests:       6 passed, 6 total
 Snapshots:   0 total
-Time:        1.331 s
+Time:        1.224 s
 ```

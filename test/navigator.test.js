@@ -1,4 +1,4 @@
-const Navigator = require('./navigator');
+const Navigator = require('../src/navigator');
 
 describe('tests for no-time-for-a-taxicab', () => {
 
