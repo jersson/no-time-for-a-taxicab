@@ -19,7 +19,7 @@ You can see the original problem [here](https://adventofcode.com/2016/day/1#part
 ```
 
 ## what's the code do?
-You'll find the most important part of the code in the `[navigator.js](./navigator.js)` file. The `Navigator` class has this structure:
+You'll find the most important part of the code in the [`navigator.js`](./navigator.js) file. The `Navigator` class has this structure:
 ```javascript
   class Navigator {
       constructor(){...}
